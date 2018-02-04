@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Sightings</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">    
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+  
+
+</head>
+
+<body>
+    <div class="parallax">
+<h1>The truth is out there...</h1>
+
+<div class="container-fluid" align = "center" style = "padding-bottom: 150px;">
+
+    </div>
+
+<div class="row">
+    <div class = "col-md-2">
+            <form>
+                    <table>
+                        <thead><tr><th></th></tr></thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                     <label for="startDate">Start Date</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="startDate" type="date" min="2009-12-01" max="2014-05-30">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="endDate">End Date</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="endDate" type="date" min="2009-12-01" max="2014-05-30">
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td>
+                                    <label for="city">City</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="city" type="text" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="state">State</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input id="state" type="text" value="">
+                                </td>
+                            </tr>
+        
+                            <tr>
+                                <td>
+                                    <label for="country">Country</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select id = "country" name="country">
+                                            <option value="all">All</option>
+                                            <option value="us">United States</option>
+                                            <option value="ca">Canada</option>
+                                            <option value="gb">Great Britain</option>
+                                            <option value="au">Australia</option>
+                                            </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <label for="shape">Shape</label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                        <select id = "shape" name="shape">
+                                                <option value="all">All</option>
+                                                <option value="circle">circle</option>
+                                                <option value="triangle">triangle</option>
+                                                <option value="unknown">unknown</option>
+                                                <option value="fireball">fireball</option>
+                                                <option value="formation">formation</option>
+                                                <option value="other">other</option>
+                                                <option value="sphere">sphere</option>
+                                                <option value="disk">disk</option>
+                                                <option value="chevron">chevron</option>
+                                                <option value="rectangle">rectangle</option>
+                                                <option value="cross">cross</option>
+                                                <option value="flash">flash</option>
+                                                <option value="changing">changing</option>
+                                                <option value="oval">oval</option>
+                                                <option value="cigar">cigar</option>
+                                                <option value="teardrop">teardrop</option>
+                                                <option value="cylinder">cylinder</option>
+                                                <option value="diamond">diamond</option>
+                                                <option value="egg">egg</option>
+                                                <option value="cone">cone</option>
+                                              </select>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td align="center">
+                                        <button id="submit" type=submit>Submit</button>
+                                    </td>
+                                </tr>
+                    </tbody>
+                </table>
+                        
+                  </form>
+    </div>
+        <div class="col-md-10">
+          <table id="summary-table" class="table table-dark">
+            <thead>
+              <tr>
+                <th>Date/Time</th>
+                <th>City</th>
+                <th>State</th>
+                <th>Country</th>
+                <th>Shape</th>
+                <th>Duration</th>
+                <th>Comment</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+</div>
+</div> <!-- parallax -->
+    <script src="js/data.js"></script>
+    <script src="js/table.js"></script>
+</body>
+</html>
